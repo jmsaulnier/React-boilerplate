@@ -1,0 +1,60 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.0.1",
+  "description": "React boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node build/dev-server.js",
+    "build": "node build/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmsaulnier/React-boilerplate.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Jean-Michel Saulnier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmsaulnier/React-boilerplate/issues"
+  },
+  "homepage": "https://github.com/jmsaulnier/React-boilerplate#readme",
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-eslint": "^6.0.0-beta.6",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.6.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "connect-history-api-fallback": "^1.2.0",
+    "css-loader": "^0.23.1",
+    "detect-dom-ready": "^1.0.2",
+    "es6-object-assign": "^1.0.1",
+    "eslint": "^2.4.0",
+    "eslint-friendly-formatter": "^1.2.2",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-babel": "^3.1.0",
+    "eslint-plugin-react": "^4.2.3",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.13.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.14.0",
+    "http-proxy-middleware": "^0.13.0",
+    "json-loader": "^0.5.4",
+    "npm-run-all": "^1.6.0",
+    "ora": "^0.2.0",
+    "react": "^15.0.0-rc.2",
+    "react-dom": "^15.0.0-rc.2",
+    "shelljs": "^0.6.0",
+    "stylus": "^0.54.2",
+    "stylus-loader": "^1.5.1",
+    "webpack": "^2.1.0-beta.4",
+    "webpack-dev-middleware": "^1.6.0",
+    "webpack-hot-middleware": "^2.10.0",
+    "webpack-merge": "^0.8.4"
+  }
+}
