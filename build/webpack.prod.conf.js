@@ -18,7 +18,6 @@ module.exports = merge(baseConfig, {
     chunkFilename: '[id].[chunkhash].js',
   },
   plugins: [
-    // http://vuejs.github.io/vue-loader/workflow/production.html
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"',
@@ -36,8 +35,8 @@ module.exports = merge(baseConfig, {
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      filename: '../index.html',
-      template: 'index.html',
+      filename: 'index.html',
+      template: 'index.template.html',
       inject: true,
       minify: {
         removeComments: true,

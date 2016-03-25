@@ -1,6 +1,6 @@
 
 var shell = require('shelljs');
-env.NODE_ENV = 'production'
+process.env.NODE_ENV = 'production'
 
 var ora = require('ora')
 var webpack = require('webpack')
@@ -11,7 +11,7 @@ spinner.start()
 
 shell.rm('-rf', 'dist')
 shell.mkdir('dist')
-shell.cp('-R', 'static', conf.output.path)
+shell.cp('-R', 'static/.', conf.output.path)
 
 webpack(conf, function (err, stats) {
   spinner.stop()

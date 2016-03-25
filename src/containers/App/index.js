@@ -28,7 +28,7 @@ export default class App extends Component {
 
     return (
       <div>
-        YO
+        YO <img src="assets/images/yeoman.png" />
       </div>
     );
   }
