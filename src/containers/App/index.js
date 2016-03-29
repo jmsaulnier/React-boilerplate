@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import styles from './styles.css' 
+
 /**
  * App component
  */
@@ -28,7 +30,7 @@ export default class App extends Component {
 
     return (
       <div>
-        YO <img src="assets/images/yeoman.png" />
+        YO <img className={styles.wrapper} src="assets/images/yeoman.png" />
       </div>
     );
   }

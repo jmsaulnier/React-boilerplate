@@ -1,10 +1,13 @@
 
 var path = require('path')
 var projectRoot = path.resolve(__dirname, '../')
+var cssnext = require('postcss-cssnext');
+var postcssImport = require('postcss-import');
 
 module.exports = {
   entry: {
     app: './src/main.js',
+    vendors: ['react', 'react-dom'],
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
@@ -50,6 +53,14 @@ module.exports = {
         },
       },
     ],
+  },
+  postcss: function (webpack) {
+    return [
+      postcssImport({
+        addDependencyTo: webpack,
+      }),
+      cssnext({ browsers: ['last 2 versions', 'Android >= 2.1'] }),
+    ]
   },
   eslint: {
     formatter: require('eslint-friendly-formatter'),
