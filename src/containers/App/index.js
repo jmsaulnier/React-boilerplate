@@ -1,37 +1,18 @@
-import React, { Component } from 'react';
+import React, { PropTypes } from 'react';
 
 import styles from './styles.css' 
 
 /**
  * App component
  */
-export default class App extends Component {
+export default function App ({ children }) {
+  return (
+    <div className={styles.wrapper}>
+      {children}
+    </div>
+  )
+}
 
-  constructor(props) {
-
-    super(props);
-
-  }
-
-  /**
-   * componentDidMount
-   */
-
-  componentDidMount() {
-
-
-  }
-
-  /**
-   * render
-   * @return {ReactElement} markup
-   */
-  render() {
-
-    return (
-      <div>
-        YO <img className={styles.wrapper} src="assets/images/yeoman.png" />
-      </div>
-    );
-  }
+App.propTypes = {
+  children: PropTypes.element,
 }

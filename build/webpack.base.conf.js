@@ -7,7 +7,7 @@ var postcssImport = require('postcss-import');
 module.exports = {
   entry: {
     app: './src/main.js',
-    vendors: ['react', 'react-dom'],
+    vendors: ['react', 'react-dom', 'react-redux', 'redux', 'react-router'],
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
